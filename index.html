@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传简历</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Left Section -->
+        <section class="left-section">
+            <h1 class="title">finish!<br>Upload your resume</h1>
+            <p class="subtitle">Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+            <div class="illustration-container">
+                <img src="assets/illustration.svg" alt="Illustration" class="illustration" onerror="this.src='https://via.placeholder.com/763x569/F8FBF9/A5A5A5?text=Illustration'">
+            </div>
+        </section>
+        
+        <!-- Right Section -->
+        <section class="right-section">
+            <div class="card">
+                <h2 class="card-title">Upload file</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" hidden>
+                    <div class="upload-content">
+                        <div class="icon-container">
+                            <svg width="58" height="39" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                                <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M12 13l0 9M12 13l-3 3M12 13l3 3" stroke="#1849D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <p class="upload-text">Drag your resume file to this area, or click on the area to select the appropriate file to upload</p>
+                        <p id="fileName" class="file-name"></p>
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn btn-secondary">Last step</button>
+                    <button class="btn btn-primary">finish</button>
+                </div>
+
+                <div class="stepper-container">
+                    <div class="progress-bar-bg"></div>
+                    <div class="progress-bar-fill"></div>
+                    <div class="steps">
+                        <div class="step completed">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L4.5 8.5L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="step completed">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L4.5 8.5L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="step active">3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
